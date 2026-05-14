@@ -40,6 +40,10 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
+section {
+    scroll-margin-top: 100px;
+}
+
 .gold {
     color: var(--accent-gold);
 }
