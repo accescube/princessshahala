@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Shahala Furniture | Handcrafted Luxury</title>
+    <meta name="description"
+        content="Princess Shahala Furniture - Premium handcrafted cane wood furniture in Mangalore. Elegance in every weave, comfort in every curve.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <!-- Placeholder for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Princess Shahala Furniture Logo" class="nav-logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-text-side">
+                    <div class="hero-titles">
+                        <h1 class="main-title">HANDCRAFTED COMFORT.</h1>
+                        <h2 class="sub-title">Made for You!</h2>
+                    </div>
+
+                    <div class="hero-features-bar">
+                        <span>HANDCRAFTED<br>WITH CARE</span>
+                        <span class="sep">|</span>
+                        <span>ECO-FRIENDLY<br>& SUSTAINABLE</span>
+                        <span class="sep">|</span>
+                        <span>STYLISH<br>& DURABLE</span>
+                        <span class="sep">|</span>
+                        <span>NATURAL BEAUTY<br>TIMELESS QUALITY</span>
+                    </div>
+
+                    <div class="hero-product-desc">
+                        <p class="set-name">PREMIUM CANE WOOD FURNITURE SET</p>
+                        <p class="set-details">1 SEATER (2 NOS) &nbsp; | &nbsp; 1 SOFA &nbsp; | &nbsp; 1 CENTER TABLE
+                        </p>
+                    </div>
+
+                    <div class="hero-contact-bar">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 89518 78218</span>
+                        </div>
+                        <span class="sep">|</span>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+91 98403 71282</span>
+                        </div>
+                        <span class="sep">|</span>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>MANGALORE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-side">
+                    <div class="hero-tagline-side">
+                        <p>"Comfort in Every Curve,<br>Elegance in Every Weave."</p>
+                    </div>
+                    <img src="hero.jpg" alt="Princess Shahala Furniture Set" class="hero-main-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="badges" class="badges">
+            <div class="container">
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <i class="fas fa-seedling"></i>
+                        <span>NATURAL MATERIALS</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>DURABLE & STRONG</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-th"></i>
+                        <span>ELEGANT DESIGN</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-recycle"></i>
+                        <span>SUSTAINABLE CHOICE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quality" class="quality-stamp">
+            <div class="container">
+                <div class="stamp-wrapper">
+                    <div class="stamp">
+                        <i class="fas fa-tree"></i>
+                        <div class="stamp-text">
+                            <span class="top">NATURAL BEAUTY</span>
+                            <span class="bottom">TIMELESS QUALITY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collection" class="collection">
+            <div class="container">
+                <h2 class="section-title">OUR COLLECTION</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="collection.png" alt="Princess Shahala TV Unit">
+                        </div>
+                        <div class="product-info">
+                            <h3>Premium Cane Wood Furniture Set</h3>
+                            <p class="product-desc">Handcrafted set including 1 Sofa, 2 Seaters, and 1 Center Table.
+                                100% natural cane wood.</p>
+                            <button class="order-btn" onclick="openOrderModal('Premium Cane Wood Furniture Set')">
+                                <i class="fab fa-whatsapp"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp Order Modal -->
+        <div id="orderModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeOrderModal()">&times;</span>
+                <h2>Place Your Order</h2>
+                <p id="modalProductName" class="modal-product-name"></p>
+                <form id="whatsappForm">
+                    <div class="form-group">
+                        <label for="userName">Your Name</label>
+                        <input type="text" id="userName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" value="1" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userMessage">Additional Requirements</label>
+                        <textarea id="userMessage" rows="3" placeholder="Any specific requirements?"></textarea>
+                    </div>
+                    <button type="submit" class="whatsapp-submit-btn">
+                        <i class="fab fa-whatsapp"></i> Send Order to WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>VISIT PRINCESS SHAHALA FURNITURE</p>
+                <p class="gold italic">WHERE STYLE MEETS COMFORT</p>
+                <p class="copyright">&copy; 2024 Princess Shahala Furniture. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <a href="https://wa.me/919840371282" class="floating-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
