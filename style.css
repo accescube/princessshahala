@@ -733,6 +733,26 @@ footer .italic {
     color: var(--accent-gold);
 }
 
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.footer-socials a {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.footer-socials a:hover {
+    color: var(--accent-gold);
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
 /* Floating WhatsApp */
 .floating-whatsapp {
     position: fixed;
