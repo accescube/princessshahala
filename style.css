@@ -391,10 +391,41 @@ nav {
     color: var(--accent-dark);
 }
 
-/* Quality Stamp */
+/* Quality Stamp & About Section */
 .quality-stamp {
-    padding: 6rem 0;
-    text-align: center;
+    padding: 8rem 0;
+    background: #fdfaf7;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    color: var(--accent-dark);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.about-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-gold);
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #6d645d;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
 }
 
 .stamp-wrapper {
@@ -755,6 +786,17 @@ footer .italic {
     .hero-features-bar {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .about-content h2::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
